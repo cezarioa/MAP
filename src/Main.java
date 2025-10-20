@@ -27,11 +27,12 @@ public class Main {
         num1.add(6);
         ArrayList<Integer> num2 = new ArrayList<>();
         num2.add(3);
-        num2.add(0);
+        num2.add(6);
         num2.add(0);
         System.out.println("Summe: " + operationen.Summe(num1, num2));
         System.out.println("Differenz: " + operationen.Differenz(num1, num2));
-        System.out.println("Produkt: " + operationen.Produkt(num1, 3));
+        System.out.println("Produkt: " + operationen.Produkt(num2, 2));
+        System.out.println("Division: " + operationen.Division(num2, 2));
 
     }
 }
