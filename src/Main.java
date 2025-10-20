@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -16,6 +19,19 @@ public class Main {
         System.out.println("Minimum: " + zahlen.minimum(nr));
         System.out.println("Maximale Summe (n-1): " + zahlen.maxSumme(nr));
         System.out.println("Minimale Summe (n-1): " + zahlen.minSumme(nr));
+
+        Operationen operationen = new Operationen();
+        ArrayList<Integer> num1 = new ArrayList<>();
+        num1.add(4);
+        num1.add(5);
+        num1.add(6);
+        ArrayList<Integer> num2 = new ArrayList<>();
+        num2.add(3);
+        num2.add(0);
+        num2.add(0);
+        System.out.println("Summe: " + operationen.Summe(num1, num2));
+        System.out.println("Differenz: " + operationen.Differenz(num1, num2));
+        System.out.println("Produkt: " + operationen.Produkt(num1, 3));
 
     }
 }
