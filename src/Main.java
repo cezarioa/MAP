@@ -34,5 +34,16 @@ public class Main {
         System.out.println("Produkt: " + operationen.Produkt(num2, 2));
         System.out.println("Division: " + operationen.Division(num2, 2));
 
+        ElektronikShop shop = new ElektronikShop();
+
+        int[] tastaturen = {40, 50, 60};
+        int[] usb = {8, 12};
+        int budget = 60;
+
+        System.out.println("Billigste Tastatur: " + ElektronikShop.billigsteTastatur(tastaturen));
+        System.out.println("Teuerster Gegenstand: " + ElektronikShop.teuersterGegenstand(tastaturen, usb));
+        System.out.println("Teuerstes USB (Budget 30): " + ElektronikShop.teuerstesUSB(new int[]{15, 45, 20}, 30));
+        System.out.println("Maximaler Kaufbetrag (Budget 60): " + ElektronikShop.maximalerKaufbetrag(tastaturen, usb, budget));
+
     }
 }
