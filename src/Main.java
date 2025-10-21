@@ -21,18 +21,12 @@ public class Main {
         System.out.println("Minimale Summe (n-1): " + zahlen.minSumme(nr));
 
         Operationen operationen = new Operationen();
-        ArrayList<Integer> num1 = new ArrayList<>();
-        num1.add(4);
-        num1.add(5);
-        num1.add(6);
-        ArrayList<Integer> num2 = new ArrayList<>();
-        num2.add(3);
-        num2.add(6);
-        num2.add(0);
-        System.out.println("Summe: " + operationen.Summe(num1, num2));
-        System.out.println("Differenz: " + operationen.Differenz(num1, num2));
-        System.out.println("Produkt: " + operationen.Produkt(num2, 2));
-        System.out.println("Division: " + operationen.Division(num2, 2));
+        int[] num1 = {3, 5, 6};
+        int[] num2 = {4, 0, 0};
+        System.out.println("Summe: " + Arrays.toString(operationen.Summe(num1, num2)));
+        System.out.println("Differenz: " + Arrays.toString(operationen.Differenz(num1, num2)));
+        System.out.println("Produkt: " + Arrays.toString(operationen.Produkt(num2, 2)));
+        System.out.println("Division: " + Arrays.toString(operationen.Division(num2, 2)));
 
         ElektronikShop shop = new ElektronikShop();
 
